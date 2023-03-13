@@ -19,7 +19,7 @@ Create a new repository using this template.
 
 ## step 4
 
-* Go to https://create.phcode.dev .This is a special development centric website of phcode.dev which shows non minified js/css files in the debugger.
+* Go to https://create.phcode.dev .This is a special development centric website of phcode.dev which shows non minified js/css files in the browser developer tools.
 * Open the cloned folder and select `Debug > Load Project As Extension`
 
 ![image](https://user-images.githubusercontent.com/5336369/224746152-0416a862-891a-4fe1-b9dd-09add25a6cc0.png)
