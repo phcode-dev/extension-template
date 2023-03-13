@@ -1,0 +1,20 @@
+{
+    "title": "Name of the extension",
+    "name": "github-<owner>-<repo>",
+    "description": "A sample extension.",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": "your name (https://github.com/<your github id>)",
+    "homepage": "<project web page url or this github repo url if no website available>",
+    "engines": {
+        "brackets": ">=2.0.0"
+    },
+    "categories": "demo",
+    "keywords": [
+        "phcode", "extension", "demo"
+    ],
+    "files": [
+        "main.js"
+    ]
+}
+

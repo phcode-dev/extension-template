@@ -2,7 +2,7 @@
 
 Quick start and create a new extension by using this template. Follow the below 4 steps:
 
-Refer this [link](https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes) for detailed extension docs after following the below 3 steps:
+Refer this [link](https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes) for detailed extension docs after following the below steps:
 
 ## step 1
 
