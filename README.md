@@ -26,7 +26,7 @@ Create a new repository using this template.
 
 
 * You can now make code changes to your extension and select `Debug> Reload With Extensions` to test the new code changes.
-* If you have an extension loaded, select `Debug> Reload With Extensions` when you are done developing the extension.
+* When you are done developing the extension/theme, select `Debug> Unload Project As Extension` to unload the extension.
 
 ![image](https://user-images.githubusercontent.com/5336369/224747590-556dff1d-5b29-41c3-88a0-3ce72ab643d0.png)
 
