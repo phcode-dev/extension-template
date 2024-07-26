@@ -1,20 +1,71 @@
 {
-    "title": "Name of the extension",
-    "name": "github-<owner>-<repo>",
-    "description": "A sample extension.",
-    "version": "0.0.1",
-    "license": "MIT",
-    "author": "your name (https://github.com/<your github id>)",
-    "homepage": "<project web page url or this github repo url if no website available>",
-    "engines": {
-        "brackets": ">=2.0.0"
-    },
-    "categories": "demo",
-    "keywords": [
-        "phcode", "extension", "demo"
-    ],
-    "files": [
-        "main.js"
-    ]
-}
+  "manifest_version": 3,
 
+  "name": "K-TLS | foudil BOT",
+  "description": "TLS.FR High Quality Visa appointment Bot | foudil BOT",
+  "version": "7.0.0",
+
+  "action": {},
+
+
+  "background":{
+    "service_worker":"background.js"
+  },
+  
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "scripting",
+    "cookies"
+  ],
+
+  "host_permissions" : ["<all_urls>"],
+
+  "web_accessible_resources": [
+      {
+        "resources": [ "Helpers/Config.KBLS","FRANCE.png" ],
+        "matches": [ "<all_urls>" ]
+      }
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.tlscontact.com/*"],
+      "css": [
+        "myapp/myapp.css",
+        "Notiflix/notiflix.css"
+      ]
+    },
+    {
+      "matches" : [
+        "*://auth.visas-fr.tlscontact.com/auth/realms/atlas/protocol/openid-connect/auth*",
+        "*://auth.visas-fr.tlscontact.com/auth/realms/atlas/login-actions/authenticate*"
+      ],
+      "js" : ["Pages/login.js"],
+      "css" : ["stylesheets/global.css","stylesheets/login.css"]
+    },
+    {
+      "matches" : [
+        "*://auth.visas-fr.tlscontact.com/auth/realms/atlas/login-actions/registration*",
+        "*://auth.visas-fr.tlscontact.com/auth/realms/atlas/protocol/openid-connect/registrations*"
+      ],
+      "js" : [ "Helpers/GmailRegister.js" , "Pages/register.js" ],
+      "css" : ["stylesheets/global.css","stylesheets/register.css"]
+    },
+    {
+      "matches" : ["*://auth.visas-fr.tlscontact.com/auth/realms/atlas/login-actions/required-action*"],
+      "js" : [ "Pages/ConfirmRegister.js" ]
+    },
+    {
+      "matches" : ["*://payment.visas-fr.tlscontact.com/checkout/*"],
+      "js" : ["Pages/Wafacash.js"]
+    }
+    
+  ]
+}
