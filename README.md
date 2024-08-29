@@ -16,6 +16,21 @@ Create a new repository using this template.
 ## step 3
 
 * Clone your GitHub Repo created from `step 2`. See [this link](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to lean how to clone a repository from GitHub.
+* Edit `package.json` file in template, make sure to update the following fields accordingly:
+
+| Field       | Description                                                            |
+|-------------|------------------------------------------------------------------------|
+| `title`     | Replace "Name of the extension" with the actual title of your extension. |
+| `name`      | Change `github-<owner>-<repo>` to your specific package name, formatted as `github-yourusername-reponame`. |
+| `description` | Update to a brief, relevant description of what your extension does.  |
+| `version`   | Start with "0.0.1" or update to reflect your current version following semantic versioning. |
+| `license`   | Confirm "MIT" is suitable or specify another license if necessary.     |
+| `author`    | Replace with your name and a link to your GitHub profile or another URL. |
+| `homepage`  | Set to the URL of your project’s homepage or GitHub repository.        |
+| `engines`   | Ensure compatibility with the required Brackets version, e.g., ">=3.0.0". |
+| `categories`| Update "demo" with relevant categories that fit your extension.         |
+| `keywords`  | Update or append additional keywords that describe your extension.    |
+| `files`     | Ensure this includes all necessary files and folders for your extension. |
 
 ## step 4
 
