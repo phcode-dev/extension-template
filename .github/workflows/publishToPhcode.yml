@@ -3,7 +3,6 @@ name: Publish extension to phcode.dev extension store
 on:
   release:
     types:
-      - edited
       - published
 
 jobs:
