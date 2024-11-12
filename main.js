@@ -1,6 +1,7 @@
 /*global define, brackets, $ */
 
-// See detailed docs in https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes
+// See detailed docs in https://docs.phcode.dev/api/creating-extensions
+
 // A good place to look for code examples for extensions: https://github.com/phcode-dev/phoenix/tree/main/src/extensions/default
 
 // A simple extension that adds an entry in "file menu> hello world"
